@@ -7,7 +7,7 @@
       </a>
     </small>
 
-    <nav style="float: right;">
+    <nav style="float: right; font-size: 14px;">
       <ul>
         <li><a href="{{route('about')}}">关于</a></li>
       </ul>
