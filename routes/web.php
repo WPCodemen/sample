@@ -17,9 +17,14 @@
 
 
 //增加路由
-Route::get('/', 'StaticPagesController@home');
-Route::get('/help', 'StaticPagesController@help');
-Route::get('/about', 'StaticPagesController@about');
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/help', 'StaticPagesController@help')->name('help');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+
+
+
+//注册一个登陆路由
+Route::get('signup', 'UsersController@create')->name('signup');
 
 
 
