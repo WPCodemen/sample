@@ -28,8 +28,11 @@ Route::get('signup', 'UsersController@create')->name('signup');
 Route::resource('users', 'UsersController');
 
 Route::get('/user/{user}', 'UsersController@show')->name('users.show');
-
 Route::post('/users', 'UsersController@store')->name('users.store');
 
 
+
+Route::get('login', 'SessionsController@create')->name('login');
+Route::post('login', 'SessionsController@store')->name('login');
+Route::delete('logout', 'SessionsController@destory')->name('logout');
 
